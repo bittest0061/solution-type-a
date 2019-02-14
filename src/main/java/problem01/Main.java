@@ -21,6 +21,16 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
+		String strnum = String.valueOf(number);
+		
+		String[] strnums = strnum.split("");
+		
+		for(int i=0; i<strnums.length; i++) {
+			if(strnums[i].equals("3")||strnums[i].equals("6")||strnums[i].equals("9")) {
+				return 1;
+			}
+		}
+		
 		return 0;
 	}
 }
